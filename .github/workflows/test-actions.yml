@@ -1,0 +1,28 @@
+name: Test Actions
+
+on: [pull_request, push]
+
+jobs:
+  test:
+    continue-on-error: true
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    name: Test with os ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Replace string in file
+        uses: ./
+        with:
+          file: tests/test-file.txt
+          old-string: WHAT
+          new-string: World
+
+      - name: Check if string was replaced
+        uses: GuillaumeFalourd/assert-command-line-output@v2
+        with:
+          command_line: cat tests/test-file.txt
+          contains: Hello World
