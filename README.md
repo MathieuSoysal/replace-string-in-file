@@ -1,9 +1,10 @@
 # Replace string in file
+
+[![Test Actions on Ubunut, Macos and Windows](https://github.com/MathieuSoysal/replace-string-in-file/actions/workflows/test-actions.yml/badge.svg)](https://github.com/MathieuSoysal/replace-string-in-file/actions/workflows/test-actions.yml)
+
 Replace string in file, works with ubuntu, windows, macos.
 
 ## Usage
-
-## Example usage
 
 The workflow, usually declared in `.github/workflows/replace-string-file.yml`, looks like:
 ```YAML
