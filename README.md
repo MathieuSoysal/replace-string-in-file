@@ -6,7 +6,7 @@ Replace string in file, works with ubuntu, windows, macos.
 
 ## Usage
 
-The workflow, usually declared in `.github/workflows/replace-string-file.yml`, looks like:
+The workflow, usually declared in `.github/workflows/replace-string-in-file.yml`, looks like:
 ```YAML
 name: Replace string in file
 
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Replace string in file
-        uses: MathieuSoysal/replace-string-file@v1.0.0
+        uses: MathieuSoysal/replace-string-in-file@v1.0.0
         with:
           file: tests/test-file.txt
           old-string: WHAT
