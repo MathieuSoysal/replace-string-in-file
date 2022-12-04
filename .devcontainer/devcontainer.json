@@ -9,7 +9,8 @@
 			"GitHub.copilot",
 			"GitHub.copilot-labs",
 			"cschleiden.vscode-github-actions",
-			"redhat.vscode-yaml"
+			"redhat.vscode-yaml",
+			"bierner.markdown-preview-github-styles"
 		]
       }
     }

@@ -1,9 +1,11 @@
-# replace-string-in-file
-Replace string in file, works with ubuntu, windows, macos
+# Replace string in file
+Replace string in file, works with ubuntu, windows, macos.
 
 ## Usage
 
-The workflow, usually declared in `.github/workflows/javadoc-publish.yml`, looks like:
+## Example usage
+
+The workflow, usually declared in `.github/workflows/replace-string-file.yml`, looks like:
 ```YAML
 name: Replace string in file
 
@@ -23,5 +25,21 @@ jobs:
           file: tests/test-file.txt
           old-string: WHAT
           new-string: World
-
 ```
+
+## Contribute
+
+### Setup development environment
+
+- Add [Nektos/act](https://www.github.com/nektos/act) to test the workflow locally
+
+-OR-
+
+- Use the devcontainer inside this project with [GitHub Codespaces](https://docs.github.com/fr/codespaces/getting-started/quickstart) or any other IDE that supports devcontainers.
+
+### Test
+
+- Run `act` command to test the workflow locally
+
+## License
+The Dockerfile and associated scripts and documentation in this project are released under the [Apache 2.0 License](https://github.com/MathieuSoysal/Javadoc-publisher.yml/blob/main/LICENSE).
