@@ -2,7 +2,7 @@
 
 [![Test Actions on Ubunut, Macos and Windows](https://github.com/MathieuSoysal/replace-string-in-file/actions/workflows/test-actions.yml/badge.svg)](https://github.com/MathieuSoysal/replace-string-in-file/actions/workflows/test-actions.yml)
 
-Replace string in file, works with ubuntu, windows, macos.
+Replace string in file, works with *Ubuntu*, *Windows*, *Macos*.
 
 ## Usage
 
