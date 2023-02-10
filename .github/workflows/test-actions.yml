@@ -26,3 +26,16 @@ jobs:
         with:
           command_line: cat tests/test-file.txt
           contains: Hello World
+
+      - name: Replace string in file with regex
+        uses: ./
+        with:
+          file: tests/test-file.txt
+          old-string: (Hello =?)W.*T$
+          new-string: WHAT
+
+      - name: Check if string was replaced
+        uses: GuillaumeFalourd/assert-command-line-output@v2
+        with:
+          command_line: cat tests/test-file.txt
+          contains: Hello WHAT

@@ -28,6 +28,29 @@ jobs:
           new-string: World
 ```
 
+### With regex
+
+```YAML
+name: Replace string in file
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Replace string in file
+        uses: MathieuSoysal/replace-string-in-file@v1.0.0
+        with:
+          file: tests/test-file.txt
+          old-string: 'W.*T$'
+          new-string: World
+```
+
 ## Contribute
 
 ### Setup development environment
