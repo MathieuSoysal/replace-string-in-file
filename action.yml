@@ -14,10 +14,17 @@ inputs:
     description: "String to replace with."
     required: true
 
+# Optional inputs
+  without-checkout:
+    description: "Enable or disable the checkout"
+    required: false
+    default: "false"
+
 runs:
   using: "composite"
   steps:
     - name: Checkouts
+      if: ${{ inputs.without-checkout == 'false' }}
       uses: actions/checkout@v4
 
     - name: Replace string in file for Ubuntu or Windows
