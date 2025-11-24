@@ -25,7 +25,7 @@ runs:
   steps:
     - name: Checkouts
       if: ${{ inputs.without-checkout == 'false' }}
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Replace string in file for Ubuntu or Windows
       if: ${{ runner.os == 'Linux' || runner.os == 'Windows' }}
