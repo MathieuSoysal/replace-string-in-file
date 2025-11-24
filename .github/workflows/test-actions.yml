@@ -12,7 +12,7 @@ jobs:
 
     name: Test with os ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Replace string in file
         uses: ./
